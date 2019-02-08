@@ -1,0 +1,1309 @@
+/*mobil menu*/
+@media (min-width:0px) and (max-width:1023px) {
+    
+    
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 99;
+  
+  border: none;
+  outline: none;
+  background-color:transparent;
+  color: white;
+  border:solid 0.5px black; 
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px
+  
+}
+    #myBtn img{
+        width:15px;
+    }
+#myBtn:hover {
+  background-color: pink;
+}
+
+    html body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        font-weight: 500;
+    }
+
+    /*mobil menu*/
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: white;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #3D3E3F;
+        display: block;
+        transition: 0.3s;
+
+
+    }
+
+
+
+    .overlay-content a {
+        margin-top: 30px;
+        font-weight: 100;
+    }
+
+    .overlay a:hover,
+    .overlay a:focus {
+        text-decoration: underline;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+
+
+
+    .burgermenu {
+        font-size: 40px;
+        margin-left: 88%;
+        position: relative;
+        top: 23px;
+        color: #3D3E3F;
+
+    }
+
+    .burgerlogo {
+        max-width: 90px;
+        margin-top: 40px;
+    }
+
+    .headerlogo {
+        width: 50px;
+        position: absolute;
+        margin-left: 3%;
+        top: 30px
+    }
+
+    .overskrift {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 50px;
+        color: #3D3E3F;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    .thumbs {
+        display: none;
+    }
+
+    .breadcrumbs {
+        display: none;
+    }
+    
+    /* back to top*/
+    #scroll {
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color:#3498db;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px
+}
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff;
+}
+
+
+    /*forside thumbs*/
+    .mobilthumb {
+        width: 100%;
+        position: relative;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .mobilthumb img {
+        width: 100%;
+        position: relative;
+
+    }
+
+    .mobilthumbheader {
+        color: white;
+        position: absolute;
+        top: 47%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 500;
+        white-space: nowrap;
+        font-size: 6vw;
+
+
+    }
+
+    .mobilemne {
+        color: #414141;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 500;
+        white-space: nowrap;
+        font-size: 4vw;
+    }
+
+    .mobilbeskrivende {
+        color: white;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 500;
+        width: 80%;
+        line-height: 25px;
+        font-size:4vw;
+    }
+
+    .mobilbeskrivende2 {
+        color: white;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 500;
+        width: 80%;
+        line-height: 25px;
+       font-size:4vw;
+            
+    }
+
+    .mobilknap a {
+
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: roboto;
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        font-weight: 500;
+        border: 2px solid;
+        border-radius: 100px;
+        padding: 0.5% 3.5%
+    }
+
+    .mobilknap2 a {
+
+        position: absolute;
+        top: 91%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: roboto;
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        font-weight: 500;
+        border: 2px solid;
+        border-radius: 100px;
+        padding: 0.5% 3.5%
+    }
+
+    /*seamless side*/
+    
+    .titel{
+        text-align: center; 
+        color:#3D3E3F;
+        position: relative;
+        top:70px;
+        font-size:11vw;
+        font-weight: 500;
+    }
+    
+    .undertitel{
+        
+        text-align: center; 
+        color:#727374;
+        position: relative;
+        top:50px;
+        font-size: 3.8vw;
+        
+    }
+
+    .back {
+        display: none;
+    }
+
+    .headimg {
+        display: none;
+
+    }
+
+    .seammobil {
+        width: 100%;
+        margin-bottom: -220px;
+    }
+
+
+    .scroll {
+        display:none;
+    }
+
+    .seamlesstekst {
+        
+        background-color: #728381;
+        color: white;
+        width:100%;
+        margin:0;
+        padding-bottom: 20px;
+  
+    }
+
+    .seamlesstekst img {
+        width: 100%;
+    }
+
+    .seamlesstekst p {
+      position: relative;
+        width: 80%;
+        left: 10%;
+        font-size: 4.5vw;;
+        font-weight: 500;
+
+    }
+
+    .collage {
+        width:100%;
+    }
+    
+    .seamvideo{
+        width:100%;
+        background-color:#728381;
+          
+    }
+    
+    .seamvideo p{
+        margin:0;
+        color:white;
+        width:80%;
+        margin-left:10%;
+        padding-top:70px;
+        font-size:4.5vw;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .seamvideo video {
+        width: 100%;
+       
+    }
+    
+    .seamvideo2{
+        width:100%;
+        background-color:#728381;
+    }
+    
+    .seamvideo2 video{
+        width:100%;
+    }
+    
+    .seamvideo2 p{
+        margin:0;
+        color:white;
+        width:80%;
+        margin-left:10%;
+       
+        font-size:4.5vw;
+        font-weight: 500;
+        text-align: center;
+    }
+    
+    /*garage side*/
+    .garagehead{
+        display: none;
+    }
+    
+    .scroll2{
+        display: none;
+    }
+    
+    .garagelogo{
+        display: none;
+    }
+    
+    .garagetekst {
+        
+        background-color: #9e9e9e;
+        color: white;
+        width:100%;
+        margin:0;
+        margin-top:-120px;
+        padding-bottom: 20px;
+  
+    }
+
+    .garagetekst video {
+        width: 100%;
+        margin-top:100px
+    }
+
+    .garagetekst p {
+      position: relative;
+        width: 80%;
+        left: 10%;
+        font-size: 4.5vw;
+        font-weight: 500;
+        
+        margin-bottom: 80px;
+
+    }
+    
+    .seamless-sites{
+        background-color: #9e9e9e;
+        width:100%;
+    
+    }
+    
+    .garagevid2{
+        display: none;
+    }
+}
+
+@media (min-width:600px )  {
+
+
+    .headerlogo {
+        width: 60px;
+        margin-left: 6%;
+
+
+    }
+    
+
+    .mobilthumb {
+        width: 45%;
+        position: relative;
+        text-align: center;
+        margin-top: 5%;
+        margin-left: 3.3%;
+        float: left;
+
+    }
+
+    .mobilknap a {
+        top: 91%;
+    }
+
+    .mobilknap a,
+    .mobilknap2 a {
+        font-size: 20px;
+    }
+    
+        
+    .mobilthumbheader{
+        font-size: 3.5vw;
+    }
+    
+    .mobilemne{
+        font-size: 1.9vw;
+        margin:0;
+    }
+    
+    .mobilbeskrivende, .mobilbeskrivende2{
+        font-size: 2vw
+    }
+
+    /* seamless side*/
+    .titel{
+        font-size: 9vw;
+    }
+    
+    .undertitel{
+        font-size:3vw;
+    }
+    
+    .seamlesstekst{
+        width:100%;
+        position: relative;
+        height:400px;
+        margin-top:-410px;
+        background-color: transparent;
+        padding:0;
+        
+        
+    }
+    
+    .seamlesstekst img{
+        width:50%;
+        position: absolute;
+         top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        
+    }
+    
+    .seamlesstekst p{
+        width:45%;
+        font-size: 1.9vw;
+         top: 48%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        
+        position:absolute;
+    }
+   
+    .seammobil{
+        margin-bottom:-200px;
+    }
+    
+    .scroll{
+        display:none;
+        
+ 
+    }
+    
+        .scroll p {
+        color: white;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 500;
+        font-size: 
+    }
+
+    .scroll img {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px
+    }
+    
+  .seamvideo{
+        width:100%;
+        background-color:#728381;
+        position: relative;
+      margin-bottom: -5%
+        
+        
+    }
+    
+    .seamvideo2{
+        width:100%;
+        background-color:#728381;
+        position: relative;
+        
+        
+     
+        
+    }
+    
+    .seamvideo p{
+        margin:0;
+        color:white;
+        width:30%;
+        margin-left:10%;
+        padding-top:70px;
+        font-size:1.9vw;
+        font-weight: 500;
+        top: 45%;
+        left: 67%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        text-align: left;
+        
+    }
+
+    .seamvideo video {
+        width: 60%;
+        
+       
+    }
+    
+    .seamvideo2 video{
+        width: 60%;
+       margin-left: 40%;
+      
+        
+    }
+    
+    .seamvideo2 p{
+        
+         margin:0;
+        color:white;
+        width:30%;
+        margin-left:10%;
+        padding-top:70px;
+        font-size:1.9vw;
+        font-weight: 500;
+        top: 43%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        text-align: left;
+        
+    }
+    
+    /*garage*/
+        .garagetekst{
+        width:100%;
+        position: relative;
+        height:450px;
+        margin-top:-430px;
+        background-color: transparent;
+        padding:0;
+        margin-bottom: 50px; 
+        background-color: #9e9e9e;    
+        
+        
+    }
+    
+    .garagetekst video{
+        width:60%;
+        position: absolute;
+         top: 29%;
+        left: 33%;
+        transform: translate(-50%, -50%);
+        
+    }
+    
+    .garagetekst p{
+        width:27%;
+        font-size: 1.9vw;
+         top: 46%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        position:absolute;
+        margin:0;
+    }
+    
+    .garagecollage{
+        width:90%;
+        margin-left: 5%;
+        margin-top: 0px;
+    }
+    
+    .garagevid2{
+        display: none;
+    }
+    
+    
+    
+    
+
+
+
+
+}
+
+
+
+
+
+@media (min-width:1024px) {
+    html body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        font-weight: 500;
+    }
+    
+    header{
+        position: relative;
+        top:20px;
+    }
+    
+    #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 3%;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:transparent;
+  color: white;
+  border:solid 0.5px black; 
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+    #myBtn img{
+        width:20px;
+    }
+#myBtn:hover {
+  background-color: pink;
+}
+
+
+
+
+    /*navigation*/
+
+    .burgermenu {
+        display: none;
+    }
+
+    .headerlogo {
+        margin-left: 0;
+        top: 36px;
+
+    }
+
+    nav a {
+        top: -20px;
+        font-size: 17px;
+        margin-left: 20px;
+        position: relative;
+        left: 68%;
+        font-family: roboto;
+        text-decoration: none;
+        color: #C3C3C3;
+
+    }
+
+    nav a:hover {
+        opacity: 0.5;
+        color: #3D3E3F;
+    }
+
+    header {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 10px;
+
+
+    }
+
+    .current,
+    .nav:hover {
+        color: #3D3E3F;
+    }
+
+    .overskrift {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 50px;
+        color: #3D3E3F;
+    }
+
+
+    .thumbmobil {
+        display: none;
+    }
+
+    /*forside*/
+
+    .thumbs {
+        width: 80%;
+        margin: 10%;
+        display: inline-block;
+
+    }
+
+
+
+    .thumb1,
+    .thumb2 {
+
+        position: relative;
+        text-align: center;
+
+    }
+
+
+
+
+    .thumb1 img {
+        width: 100%;
+    }
+
+    .thumb2 img {
+        width: 100%;
+    }
+
+    .thumbheader1 {
+
+        font-family: roboto;
+        font-weight: 400;
+        position: absolute;
+        top: 18%;
+        left: 12%;
+        margin: 0;
+        color: white;
+        font-size: 2.6vw;
+        font-weight: 500;
+
+    }
+
+    .thumb1,
+    .thumb2,
+    .thumb3 {
+        margin-top: 3%;
+    }
+
+    .emne {
+        font-family: roboto;
+        font-weight: 400;
+        position: absolute;
+        top: 36%;
+        left: 12%;
+        margin: 0;
+        font-size: 1vw;
+        font-weight: 500;
+        color: #414141;
+    }
+
+    .beskrivende {
+        font-family: roboto;
+        font-weight: 500;
+        position: absolute;
+        top: 44%;
+        left: 12%;
+        margin: 0;
+        font-size: 1.2vw;
+        color: white;
+        width: 30%;
+        text-align: left;
+        font-weight: 500;
+       
+    }
+
+    .knap1 a {
+        position: absolute;
+        left: 17%;
+        top: 65%;
+        font-family: roboto;
+        text-decoration: none;
+        color: white;
+        font-size: 1vw;
+        font-weight: 500;
+        border: 2px solid;
+        border-radius: 100px;
+        padding: 0.2% 2%
+    }
+
+    .thumbheader2 {
+        font-family: roboto;
+        font-weight: 500;
+        position: absolute;
+        top: 18%;
+        left: 56%;
+        margin: 0;
+        color: white;
+        font-size: 2.6vw; 
+
+    }
+
+    .emne2 {
+        font-family: roboto;
+        font-weight: 500;
+        position: absolute;
+        top: 36%;
+        left: 56%;
+        margin: 0;
+        font-size: 1vw;
+        font-weight: 500;
+        color: #414141;
+    }
+
+    .beskrivende2 {
+        font-family: roboto;
+        font-weight: 500;
+        position: absolute;
+        top: 44%;
+        left: 56%;
+        margin: 0;
+        font-size: 1.1vw;
+        color: white;
+        width: 37%;
+        text-align: left;
+        font-weight: 500;
+        
+
+    }
+
+    .knap2 a {
+        position: absolute;
+        left: 65%;
+        top: 69%;
+        font-family: roboto;
+        text-decoration: none;
+        color: white;
+        font-size: 1vw;
+        font-weight: 500;
+        border: 2px solid;
+        border-radius: 100px;
+        padding: 0.2% 2%
+    }
+
+    .thumbheader3 {
+
+        font-family: roboto;
+        font-weight: 500;
+        position: absolute;
+        top: 24%;
+        left: 12%;
+        margin: 0;
+        color: white;
+        font-size: 2.6vw;
+
+    }
+
+    .emne3 {
+        font-family: roboto;
+        font-weight: 500;
+        position: absolute;
+        top: 39%;
+        left: 12%;
+        margin: 0;
+        font-size: 1vw;
+        font-weight: 500;
+        color: #414141;
+
+    }
+
+    .beskrivende3 {
+        font-family: roboto;
+        font-weight: 500;
+        position: absolute;
+        top: 45%;
+        left: 12%;
+        margin: 0;
+        font-size: 1.1vw;
+        color: white;
+        width: 37%;
+        text-align: left;
+        font-weight: 500;
+       
+
+    }
+
+    .knap3 a {
+        position: absolute;
+        left: 17%;
+        top: 66%;
+        font-family: roboto;
+        text-decoration: none;
+        color: white;
+        font-size: 1vw;
+        font-weight: 500;
+        border: 2px solid;
+        border-radius: 100px;
+        padding: 0.2% 2%
+    }
+
+
+    /*breadcrumbs på enkelt sider*/
+    .breadcrumbs {
+        display: inline-block;
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: -5px;
+        margin-top: 120px;
+
+    }
+
+    .breadcrumbs li {
+        list-style: none;
+
+    }
+
+    .breadcrumbs a {
+        text-decoration: none;
+        color: #C3C3C3;
+
+    }
+
+    .breadcrumbs .nu {
+        color: #3D3E3F;
+    }
+    
+    .crumb: hover{
+        color:#3D3E3F;
+    }
+
+    /*overskrift på enkeltsider*/
+    .titel {
+        font-size: 3vw;
+        margin: 5px;
+        width: 80%;
+        margin-left: 10%;
+        color: #3D3E3F;
+
+
+    }
+
+    .undertitel {
+        width: 80%;
+        margin-left: 10%;
+        color: #727374;
+        margin-top: -8;
+        font-weight: 500;
+        font-size:1.2vw;
+    }
+
+    /*billede seamless øverst*/
+    .headimg {
+        max-width: 60%;
+        margin-left: 40%;
+        position: absolute;
+        top: 150px;
+        display: inline;
+
+
+    }
+    
+    .seammobil{
+        display: none;
+    }
+
+    /*baggrundsbilelde top af seamless side*/
+    .back {
+        width: 100%;
+        position: relative;
+        display: inline-block;
+        top: 20px;
+
+    }
+
+    /*se mere ikon og tekst */
+    .scroll {
+        height: 200px;
+        position: relative;
+        width: 100%;
+        top: -170px;
+        display: inline-block;
+    }
+
+    .scroll p {
+        color: white;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 500;
+    }
+
+    .scroll img {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px
+    }
+
+    /*billede med tekst på seamless*/
+    .seamlesstekst {
+        position: relative;
+        width: 100%;
+        background-color: #728381;
+        height: 800px;
+        margin-top: -200px
+    }
+
+    .seamlesstekst img {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+
+    }
+
+    .seamlesstekst p {
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        width: 40%;
+        color: white;
+        font-size: 1.5vw;
+        font-weight: 500;
+
+    }
+
+    .collage {
+        width: 100%;
+        display: inline-block;
+
+    }
+    
+    .seamvideo{
+        position: relative;
+        width:100%;
+        background-color: #728381;
+        color:white;
+        font-weight: 500;
+        margin-bottom: -5%
+       
+    }
+    
+    .seamvideo p{
+         margin:0;
+         position: absolute;
+        top: 50%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        width: 30%;
+        font-size: 1.5vw;
+        font-weight: 500;
+        z-index: 99;
+        
+    }
+
+    .seamvideo video {
+        width: 60%;
+        left:3%;
+        
+
+    }
+    
+    
+    
+     .seamvideo2 p{
+        font-size: 1.5vw;
+         left:19.5%;
+         width:30%;
+         
+             
+    }
+    
+    .seamvideo2 video{
+        width:60%;
+        margin-left:40%;
+    }
+    
+   
+    
+   
+
+    .overlay {
+        display: none;
+    }
+    
+    /*garage side*/
+    
+    .garagehead{
+        width:80%;
+        margin-left:10%;
+        margin-top:80px;
+    }
+    
+    .garagelogo {
+        position: absolute;
+        top:200px;
+        left:74.5%;
+        width:15%;
+    }
+    
+    
+    
+    .sort p{
+        text-align: center;
+        font-family: roboto;
+        color:#3D3E3F;
+    }
+    
+       .scroll2 {
+        height: 200px;
+        position: relative;
+        width: 100%;
+        top: -170px;
+        display: inline-block;
+    }
+
+    .scroll2 p {
+        font-weight: 500;
+        font-family: roboto;
+        color:#3D3E3F;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 500;
+    }
+
+    .scroll2 img {
+
+        position: absolute;
+        top: 110%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px
+    }
+    
+     .garagetekst {
+        position: relative;
+        width: 100%;
+        background-color: transparent;
+        height: 700px;
+        margin-top: 0px;
+    }
+
+    .garagetekst video {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+
+    }
+
+    .garagetekst p {
+        position: absolute;
+        top: 50%;
+        left: 73%;
+        transform: translate(-50%, -50%);
+        width: 30%;
+        color: #3D3E3F;
+        font-size: 1.5vw;
+        font-weight: 500;
+        margin:0;
+        width:30%;
+        color:#3D3E3F;
+
+    }
+    
+    .garagecollage{
+        width:80%;
+        margin-left: 10%;
+        margin-top: -40px
+
+    }
+    
+    .garagevid1{
+        display: none;
+    }
+    
+    
+
+
+    
+  
+
+}
+
+
+
+
+
+
+@media (min-width:1440px) {
+
+
+
+    nav a {
+        left: 77.5%
+    }
+
+
+
+    .thumbheader1,
+    .thumbheader2,
+    .thumbheader3 {
+        
+    }
+
+    .emne {
+        
+        top: 37%;
+    }
+
+    .emne2 {
+       
+
+    }
+
+    .emne3 {
+        
+        top: 38%;
+
+    }
+
+    .beskrivende {
+       
+       
+     
+        top: 45%;
+
+    }
+
+    .beskrivende2 {
+        
+       
+    }
+
+    .beskrivende3 {
+        
+        
+      
+        top: 45%;
+
+    }
+
+
+
+    .knap1 a {
+        top: 67%;
+    }
+
+    .knap2 a {
+        
+        top: 69%
+    }
+
+    .knap3 a {
+        top: 65%;
+    }
+
+
+
+
+
+
+
+}
