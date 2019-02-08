@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+
+
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <!-- udfyld linje 6 til SEO-->
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lasse Skov - Digital designer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/pil.png" alt="pil"></button>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">Portfolio</a>
+            <a href="about.html">Om mig</a>
+            <a href="contact.html">Kontakt</a>
+            <img src="images/logo.png" alt="logo" class="burgerlogo">
+        </div>
+    </div>
+    <header>
+        <a href="index.html"><img src="images/logo.png" alt="logo" class="headerlogo"></a>
+        <nav>
+            <a class="current" href="index.html">Portfolio</a>
+            <a href="about.html">Om Mig</a>
+            <a href="contact.html">Kontakt</a>
+        </nav>
+        <span class="burgermenu" onclick="openNav()">&#9776;</span>
+
+
+
+
+
+    </header>
+    <div class="hero">
+        <h1 class="overskrift">Lasse Skov Rasmussen</h1>
+    </div>
+
+    <!--thumbs mobil -->
+
+    <div class="thumbmobil">
+        <!-- thumb mobil 1 -->
+        <div class="mobilthumb">
+            <img src="images/seammobil.png" alt="produktbillede">
+            <div class="tekst">
+                <h1 class="mobilthumbheader">Seamless Basic</h1>
+
+                <p class="mobilemne">Tværfagligt Eksamensprojekt</p>
+                <p class="mobilbeskrivende">Hvordan kan man gennem en salgskanal
+                    afspejle en helt ny virksomheds værdier?</p>
+
+                <div class="mobilknap"><a href="seamless.html">Se mere</a></div>
+            </div>
+        </div>
+
+        <!-- thumb mobil 2 -->
+        <div class="mobilthumb">
+            <img src="images/garagemobil.png" alt="produktbillede">
+            <div class="tekst">
+                <h1 class="mobilthumbheader">Garage Motorcycles</h1>
+
+                <p class="mobilemne">UI-Challenge</p>
+                <p class="mobilbeskrivende2">Jeg bruger ofte min fritid på at lave forskellige UI-Challenges. Denne challenge
+                    startede som en enkel produktside, og endte som en mindre prototype.</p>
+
+                <div class="mobilknap2"><a href="garage.html">Se mere</a></div>
+            </div>
+        </div>
+
+        <!-- thumb mobil 3 -->
+
+        <div class="mobilthumb">
+            <img src="images/musikmobil.png" alt="produktbillede">
+            <div class="tekst">
+                <h1 class="mobilthumbheader">UI til streaming tjeneste</h1>
+
+                <p class="mobilemne">UI-Challenge</p>
+                <p class="mobilbeskrivende">For at prøve kræfter med noget der var helt nyt for mig,
+                    udviklede jeg en prototype til en streaming tjeneste.</p>
+
+                <div class="mobilknap2"><a href="seamless.html">Se mere</a></div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!--thumbs computer -->
+    <div class="thumbs">
+        <div class="thumb1">
+            <img src="images/seamlessthumb.png" alt="produktbillede">
+            <div class="tekst">
+                <h1 class="thumbheader1">Seamless Basic</h1>
+
+                <p class="emne">Tværfagligt Eksamensprojekt</p>
+                <p class="beskrivende">Hvordan kan man gennem en salgskanal
+                    afspejle en helt ny virksomheds værdier?</p>
+
+                <div class="knap1"><a href="seamless.html">Se mere</a></div>
+            </div>
+        </div>
+
+        <!-- thumb 2 -->
+        <div class="thumb2">
+            <img src="images/garage.png" alt="produktbillede">
+            <div class="tekst">
+                <h1 class="thumbheader2">Garage Motorcycles</h1>
+
+                <p class="emne2">UI-Challenge</p>
+                <p class="beskrivende2">Jeg bruger ofte min fritid på at lave forskellige UI-Challenges. Denne challenge
+                    startede som en enkel produktside, og endte som en mindre prototype.</p>
+
+                <div class="knap2"><a href="garage.html">Se mere</a></div>
+            </div>
+
+
+        </div>
+
+        <!-- thumb3-->
+        <div class="thumb1">
+            <img src="images/musik.png" alt="produktbillede">
+            <div class="tekst">
+                <h1 class="thumbheader3">UI til streaming tjeneste</h1>
+
+                <p class="emne3">UI-Challenge</p>
+                <p class="beskrivende3">For at prøve kræfter med noget der var helt nyt for mig,
+                    prøvede jeg at udvikle en prototype til en streaming tjeneste. </p>
+
+                <div class="knap3"><a href="#">Se mere</a></div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+           <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+
+        $(".hover").mouseleave(
+            function() {
+                $(this).removeClass("hover");
+            }
+        );
+    </script>
+        <script>
+ window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+    </script>
+       
+
+        
+    
+
+
+</body>
+</html>

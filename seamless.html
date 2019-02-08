@@ -1,0 +1,145 @@
+<html lang="da">
+
+<head>
+    <!DOCTYPE html>
+
+
+
+    <html lang="da">
+
+    <head>
+    <meta charset="utf-8">
+    <!-- udfyld linje 6 til SEO-->
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lasse Skov - Digital designer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+
+<body>
+   <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/pil.png" alt="pil"></button>
+   
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">Portfolio</a>
+            <a href="#">Om mig</a>
+            <a href="#">Kontakt</a>
+            <img src="images/logo.png" alt="logo" class="burgerlogo">
+        </div>
+    </div>
+    <header>
+        <a href="index.html"><img src="images/logo.png" alt="logo" class="headerlogo"></a>
+        <nav>
+            <a class="current" href="index.html">Portfolio</a>
+            <a href="about.html">Om Mig</a>
+            <a href="contact.html">Kontakt</a>
+        </nav>
+        <span class="burgermenu" onclick="openNav()">&#9776;</span>
+
+    </header>
+    <div class="hero">
+        <div class="breadcrumbs">
+
+            <a class="crumb" href="index.html">Portfolio/</a>
+            <a class="nu" href="index.html">Seamless Basic</a>
+
+        </div>
+
+        <h1 class="titel">Seamless Basic</h1>
+        <p class="undertitel">Tværfagligt eksamensprojekt</p>
+
+
+
+        <img src="images/seammobil.png" alt="produkt billede" class="seammobil">
+        <img src="images/baggrundseamless.png" alt="baggrund" class="back">
+
+        <img class="headimg" src="images/seamlessmock.png" alt="produktbillede">
+    </div>
+
+    <div class="scroll">
+        <p>Se mere</p>
+        <img src="images/scroll.png" alt="scroll-icon">
+
+    </div>
+
+    <section class="seamlesstekst">
+        <img src="images/seamlessto.png" alt="produktbillede">
+        <p>Seamless Basic er et helt nyt tøjmærke, som jeg samarbejdede med til mit
+            eksamensprojekt på 2.semester.<br><br>
+
+            Seamless Basic producerer basistøj til kvinder, med fokus på kvalitet og bæredygtighed.<br><br>
+
+            Som nyt tøjmærke stod de overfor den udfordring at de endnu ikke havde nogen webshop.<br><br>
+
+            Jeg gik derfor igang med at udvikle en prototype til deres webshop, med fokus på at den udover at skulle agere som salgskanal, også skulle formidle Seamless basics værdier, og hvad der gør dem<span class="understreg"> unikke.</span>
+        </p>
+
+    </section>
+
+    
+
+        <img class="collage" src="images/midte.png" alt="produktbilleder">
+
+    
+    <div class="seamvideo">
+       <p> Et enkelt og stilrent design skal være med til at sikre en ukompliceret brugerrejse for kunden.</p>
+        <video autoplay loop class="seamvideo">
+            <source src="images/seamlessvideo.mp4" type="video/mp4" >
+            Your Browser does not support video
+        </video>
+    </div>
+    
+    <div class="seamvideo2">
+       <p>Gennemført design tager højde for både funktionalitet og æstetik.</p>
+       <video autoplay loop>
+           <source src="images/checkout2.mp4" type="video/mp4">
+             Your Browser does not support video  
+       </video>
+        
+    </div>
+    
+    
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+
+        $(".hover").mouseleave(
+            function() {
+                $(this).removeClass("hover");
+            }
+        );
+    </script>
+        <script>
+ window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+    </script>
+       
+
+
+</body>
+
+</html>

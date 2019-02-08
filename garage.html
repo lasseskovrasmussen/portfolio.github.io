@@ -1,0 +1,134 @@
+<html lang="da">
+
+<head>
+    <!DOCTYPE html>
+
+
+
+    <html lang="da">
+
+    <head>
+    <meta charset="utf-8">
+    <!-- udfyld linje 6 til SEO-->
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lasse Skov - Digital designer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/pil.png" alt="pil"></button>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">Portfolio</a>
+            <a href="#">Om mig</a>
+            <a href="#">Kontakt</a>
+            <img src="images/logo.png" alt="logo" class="burgerlogo">
+        </div>
+    </div>
+    <header>
+        <a href="index.html"><img src="images/logo.png" alt="logo" class="headerlogo"></a>
+        <nav>
+            <a class="current" href="index.html">Portfolio</a>
+            <a href="about.html">Om Mig</a>
+            <a href="contact.html">Kontakt</a>
+        </nav>
+        <span class="burgermenu" onclick="openNav()">&#9776;</span>
+
+    </header>
+    <div class="hero">
+        <div class="breadcrumbs">
+
+            <a class="crumb" href="index.html">Portfolio/</a>
+            <a class="nu" href="index.html">Garage Motorcycles</a>
+
+        </div>
+
+        <h1 class="titel">Garage Motorcycles</h1>
+        <p class="undertitel">UI-Challenge: produktside</p>
+
+
+
+        <img src="images/garagemobil.png" alt="produkt billede" class="seammobil">
+
+        <img src="images/garage-logo.png" alt="logo" class="garagelogo">
+
+        <img class="garagehead" src="images/garagehead.jpg" alt="produktbillede">
+    </div>
+
+    <div class="scroll2">
+        <span class="sort">
+            <p>Se mere</p>
+        </span>
+        <img src="images/scroll2.png" alt="scroll-icon">
+    </div>
+
+    <section class="garagetekst">
+        <video class="garagevid1" autoplay loop >
+
+            <source src="images/garagevid.mp4" type="video/mp4">
+
+        </video>
+
+        <video autoplay loop class="garagevid2" >
+            <source  src="images/garagevid2.mp4" type="video/mp4">
+
+        </video>
+
+        <p>Garage Motorcycles er en fiktiv virksomhed, som jeg udviklede et logo og webshop interface til.
+        </p>
+
+    </section>
+
+    <section class="seamless-sites">
+
+        <img class="collage garagecollage" src="images/garagemid.png" alt="produktbilleder">
+
+    </section>
+
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+
+        $(".hover").mouseleave(
+            function() {
+                $(this).removeClass("hover");
+            }
+        );
+    </script>
+    <script>
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+</body>
+
+</html>
